@@ -27,8 +27,8 @@ h1 {
 
 @keyframes topslide{
     90% {
-        -webkit-transform: translateY(250px);
-        transform: translateY(250px);
+        -webkit-transform: translateY(1050px);
+        transform: translateY(1050px);
     }
 
     100% {
@@ -80,9 +80,14 @@ h1 span {
 }
 
 @keyframes conslide1{
+    0% {
+        -webkit-transform: translateY(250px);
+        transform: translateY(250px);
+    }
+
     90% {
-        -webkit-transform: translateY(1250px);
-        transform: translateY(1250px);
+        -webkit-transform: translateY(250px);
+        transform: translateY(250px);
     }
 
     100% {
@@ -96,9 +101,14 @@ h1 span {
 }
 
 @keyframes conslide2{
+    0% {
+        -webkit-transform: translateY(250px);
+        transform: translateY(250px);
+    }
+
     90% {
-        -webkit-transform: translateX(1000px);
-        transform: translateX(1000px);
+        -webkit-transform: translateY(250px);
+        transform: translateY(250px);
     }
 
     100% {
@@ -112,17 +122,18 @@ h1 span {
 }
 
 @keyframes conslide3{
+    0% {
+        -webkit-transform: translateY(250px);
+        transform: translateY(250px);
+    }
+
     90% {
-        -webkit-transform: translateY(-450px);
-        transform: translateY(-450px);
+        -webkit-transform: translateY(250px);
+        transform: translateY(250px);
     }
 
     100% {
         -webkit-transform: translateY(0) scale(1);
         transform: translateY(0)  scale(1);
     }
-}
-
-.con {
-    text-align: center;
 }

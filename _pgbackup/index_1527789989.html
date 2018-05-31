@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="assets/css/loader.css" rel="stylesheet" type="text/css">
+    </head>
+    <body onload="setTimeout(loadFunc, 3000)">
+        <audio autoplay>
+            <source src="https://tympanus.net/Development/AudioPlayer/audio/BlueDucks_FourFlossFiveSix.mp3">
+            <source src="https://tympanus.net/Development/AudioPlayer/audio/BlueDucks_FourFlossFiveSix.ogg">
+            <source src="https://tympanus.net/Development/AudioPlayer/audio/BlueDucks_FourFlossFiveSix.wav">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="container">
+            <div id="loader-wrapper">
+                <div id="loader">
+</div>
+                <div class="loadtext">
+</div>
+                <div class="loader-section section-left">
+                    <div class="innerleft">
+                        <p class="loadertext textleft">
+                        Hi I'm Jade </p>
+                    </div>
+                </div>
+                <div class="loader-section section-right">
+                    <div class="innerright">
+                        <p class="loadertext textright">
+                        a web developer </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="home">
+            <div class="header">
+                <h1 class="head">
+	Welcome.</h1>
+            </div>
+            <div class="content">
+</div>
+            <div class="footer">
+                <a class="btnNav"> Projects</a>
+                <a class="btnNav"> About</a>
+                <a class="btnNav"> Contact</a>
+            </div>
+        </section>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script>
+        function loadFunc(){
+            document.body.style.overflow = "visible";
+            $('body').addClass('loaded');
+        };
+        </script>
+        <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
