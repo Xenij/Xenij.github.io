@@ -30,7 +30,7 @@
                 <div class="loader-section section-right"> 
                     <div class="innerright"> 
                         <p class="loadertext textright"> 
-                            a web <span class="dev" id="bounceTxt">developer</span></p> 
+                        a web <span id="bounceTxt">developer</span></p> 
                     </div>                     
                 </div>                 
             </div>             
@@ -74,35 +74,6 @@
     });
 });
         </script>         
-        <script>
-        	var 
-    myText = document.getElementById("bounceTxt").innerHTML,
-    wrapText = "";
-
-for (var i=0; i<myText.length; i++) {
-     wrapText += "<em>" + myText.charAt(i) + "</em>";
-}
-
-document.getElementById("bounceTxt").innerHTML = wrapText;
-
-var 
-    myLetters = document.getElementsByTagName("em"),
-    j = 0;
-
-function applyBounce() {
-     setTimeout(function() {
-          myLetters[j].className = "bounce-me";
-          j++;
-          
-          if (j < myLetters.length) {
-               applyBounce();
-          }
-     }, 250);
-}
-
-applyBounce();
-        
-        </script>
         <script src="assets/js/jquery.min.js"></script>         
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         

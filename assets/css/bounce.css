@@ -1,0 +1,28 @@
+.dev {
+    text-align: center;
+    text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.dev em {
+    font-style: normal;
+    display: inline-block;
+}
+
+.dev em.bounce-me {
+    -webkit-animation: bounce 1s 1 ease-in-out;
+    animation: bounce 1s 1 ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+    60% {
+        -webkit-transform: translate(0px, -20px) scale(1.2);
+        opacity: 0.8;
+    }
+}
+
+@keyframes bounce {
+    60% {
+        -webkit-transform: translate(0px, -20px) scale(1.2);
+        opacity: 0.8;
+    }
+}
