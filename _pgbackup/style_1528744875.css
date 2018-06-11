@@ -35,12 +35,6 @@ h1 {
     background-color: white;
 }
 
-.end {
-    color: white;
-    height: 75vh;
-    background-color: #7159f9;
-}
-
 .header {
     margin-left: 0;
     width: 100vw;
@@ -83,7 +77,6 @@ h1 {
 }
 
 .contact:hover {
-    cursor: pointer;
     color: white;
     background: black;
     border: 2px solid black;
@@ -137,71 +130,10 @@ h1 {
     text-align: center;
 }
 
-.workc {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .workh {
-    padding-top: 3vh;
-    font-weight: 700;
-    margin: 0 auto;
-    font-size: 2.5vw;
-    color: black;
-}
-
-.workh2 {
     padding-top: 4vh;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 auto;
     font-size: 1.5vw;
     color: black;
-}
-
-.contactb {
-    color: #4473bf !important;
-    text-decoration: underline !important;
-}
-
-.contactb:hover {
-    cursor: pointer;
-}
-
-.grid {
-    margin-top: 10vh;
-}
-
-.grid-item {
-    width: 20%;
-    height: 40vh;
-    border: 2px solid black;
-    margin-bottom: 2vh;
-    border-radius: 10px;
-}
-
-.endh {
-    top: -50px;
-    margin: 0 auto;
-    border-radius: 20px;
-    height: 20vh;
-    width: 80vw;
-    background-color: #464054;
-    position: relative;
-}
-
-.endc {
-    width: 50vw;
-    margin: 0 auto;
-    text-align: center;
-    color: #cfc6ff;
-    font-size: 1.5vw;
-}
-
-.endt {
-}
-
-.logo2 {
-    width: 75px;
-    height: 75px;
 }

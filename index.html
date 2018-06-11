@@ -9,10 +9,14 @@
         <title>Blank Template for Bootstrap</title>         
         <!-- Bootstrap core CSS -->         
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
         <!-- Custom styles for this template -->         
         <link href="style.css" rel="stylesheet"> 
         <link href="assets/css/loader.css" rel="stylesheet" type="text/css"> 
         <link href="assets/css/bounce.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/scrollbar.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>     
     <body onload="setTimeout(loadFunc, 3000)"> 
         <div class="container"> 
@@ -36,30 +40,105 @@
             </div>             
         </div>         
         <section class="home"> 
-            <div class="header"> 
-                <h1 class="head"> 
-	Hi</h1> 
-            </div>             
+            <div class="header row" style="height: 100px;">
+                <div class="logo col-lg-2 col-md-2" style="height: 100px;">
+                    <img class="logo1" src="https://www.freeiconspng.com/uploads/letter-j-icon-png-24.png">
+                </div>
+                <div class="col-lg col-md" style="height: 100px;"></div>
+                <div class="col-lg-2 col-md-2" style="height: 100px;
+    vertical-align: middle;
+    display: inline-block;">
+                    <button class="contact" style="vertical-align: middle;
+    display: inline-block;">
+                        Say, Hello
+</button>
+                </div>
+            </div>
             <div class="content"> 
-                <div class="row">
-                    <div class="about con col-md-4 col-lg-4" style="padding-top: 5%;">
-                        About
-</div>
-                    <div class="hobby con col-lg-4 col-md-4" style="padding-top: 10%;">
-                        Hobbies
-</div>
-                    <div class="contact con col-md-4 col-lg-4" style="padding-top: 15%;">
-                        Contact
-</div>
+                <div class="text1">
+                    <h1 class="bold">
+                    Front-end Developer & College Student </h1>
+                    <h4 class="under">
+                        I design and code beautifully simple things, and I love what I do. </h4>
                 </div>
             </div>             
         </section>         
+        <section class="about">
+            <div class="text1">
+                <h4 class="abouth">
+                    Hi, I'm Jade. </h4>
+                <p class="aboutt">
+                        Since starting school I knew I wanted to work with computers, Web Development has let me see my creations come to life. I started a remote internship and have begun my journey Freelancing.  </p>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="card">
+                <i class="fa fa-file-code-o fa-3x" aria-hidden="true" style="text-align: center;
+    color: #7159f9;
+    padding-top: 6vh;
+    padding-bottom: 3vh;"></i>
+                <text style="text-align: center;
+    font-weight: 700;
+    font-size: 2vw;">Front End Developer</text>
+                <text style="text-align: center;
+    padding-top: 2vh;
+    width: 75%;
+    margin: 0 auto;">I like to Code things from scratch and really learn what I am doing, trying new things is my specialty.</text>
+                <span class="hr"></span>
+                <h4 class="cardh">
+                    Languages I speak: </h4>
+                <text class="cardt">HTML, CSS, Vue, JQuery, Javascript </text>
+                <h4 class="cardh">
+                    Dev Tools: </h4>
+                <text class="cardt" style="width: 8vw;
+    text-align: center;">
+                    Atom
+                    CodePen
+                    CoDrops
+                    GitHub
+                    GitLab
+                    JFiddle
+                    Lighthouse
+                    Pinegrow
+                    Terminal
+</text>
+            </div>
+        </section>
+        <section class="work">
+            <div class="workc">
+                <h4 class="workh">
+                    My recent Works </h4>
+                <h4 class="workh2">
+                    Here are a few examples of what I'm capable of. Want more? Say <a class="contactb">hello!</a> </h4>
+                <div class="grid row" style="padding-left: 3vw;
+    padding-right: 3vw;">
+                    <div class="grid-item col-md-5 ml-md-5 mr-md-2 ml-lg-0 col-lg mr-lg-2 ml-xl-0 mr-xl-2 col-xl col-sm-12"></div>
+                    <div class="grid-item col-md-5 ml-md-2 col-lg ml-lg-2 mr-lg-2 ml-xl-2 mr-xl-2 col-xl col-sm-12"></div>
+                    <div class="grid-item col-md-5 ml-md-5 mr-md-2 mr-lg-0 col-lg ml-lg-2 ml-xl-2 mr-xl-0 col-xl col-sm-12"></div>
+                </div>
+                <button class="contact">
+                    See more.
+</button>
+            </div>
+        </section>
+        <section class="end">
+            <div class="endh">
+</div>
+            <div class="endc">
+                <img class="logo2" src="https://www.freeiconspng.com/uploads/letter-j-icon-png-24.png">
+                <text class="endt">
+                    <br>Truning coffee into code
+                    <br> one line at a time
+                </text>
+            </div>
+        </section>
         <!-- Bootstrap core JavaScript
     ================================================== -->         
         <!-- Placed at the end of the document so the pages load faster -->         
         <script>
         function loadFunc(){
             document.body.style.overflow = "visible";
+            
             $('body').addClass('loaded');
         };
         </script>         
@@ -102,8 +181,7 @@ function applyBounce() {
 
 applyBounce();
         
-        </script>
-        <script src="assets/js/jquery.min.js"></script>         
+        </script>         
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->         
