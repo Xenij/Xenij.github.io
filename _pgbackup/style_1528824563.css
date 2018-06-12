@@ -263,7 +263,7 @@ h1 {
     border-radius: 50px;
 }
 
-#particles-js canvas {
+canvas {
     height: 50vh!important;
     position: absolute;
     top: 100vh;
