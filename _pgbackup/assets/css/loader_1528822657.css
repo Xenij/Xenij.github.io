@@ -1,0 +1,246 @@
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+}
+
+#loader {
+    display: block;
+    position: absolute;
+    top: 44%;
+    left: 46%;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    z-index: 1001;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+@-webkit-keyframes wheelHueColor {
+    from,
+    to {
+        color: rgb(236,100,75);
+    }
+
+    10% {
+        color: rgb(219,10,91);
+    }
+
+    20% {
+        color: rgb(174,168,211);
+    }
+
+    30% {
+        color: rgb(89,171,227);
+    }
+
+    40% {
+        color: rgb(37,116,169);
+    }
+
+    50% {
+        color: rgb(3,201,169);
+    }
+
+    60% {
+        color: rgb(22,160,133);
+    }
+
+    70% {
+        color: rgb(233,212,96);
+    }
+
+    80% {
+        color: rgb(243,156,18);
+    }
+
+    90% {
+        color: rgb(236,240,241);
+    }
+}
+
+@keyframes wheelHueColor {
+    from,
+    to {
+        color: rgb(236,100,75);
+    }
+
+    10% {
+        color: rgb(219,10,91);
+    }
+
+    20% {
+        color: rgb(174,168,211);
+    }
+
+    30% {
+        color: rgb(89,171,227);
+    }
+
+    40% {
+        color: rgb(37,116,169);
+    }
+
+    50% {
+        color: rgb(3,201,169);
+    }
+
+    60% {
+        color: rgb(22,160,133);
+    }
+
+    70% {
+        color: rgb(233,212,96);
+    }
+
+    80% {
+        color: rgb(243,156,18);
+    }
+
+    90% {
+        color: rgb(236,240,241);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+
+.innerleft {
+    color: white;
+    margin-top: 40vh;
+    width: 90%;
+    height: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    text-align: right;
+}
+
+.innerright {
+    margin-top: 52vh;
+    width: 100%;
+    height: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+}
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 5;
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+.loader-section.section-left,
+.loader-section.section-right {
+    background-color: #222222 !important;
+}
+
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+    transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+    transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader-wrapper .loadtext {
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.loaded #loader {
+    opacity: 0;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transition: all 0.3s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.3s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.3s 1s ease-out;
+    transition: all 0.3s 1s ease-out;
+}
+
+.no-js #loader-wrapper {
+    display: none;
+}
+
+.no-js h1 {
+    color: #222222;
+}
+
+.loadertext {
+    color: white;
+}
+
+.color {
+    color: rgb(236,100,75);
+    -webkit-animation: wheelHueColor 2s infinite;
+    animation: wheelHueColor 2s infinite;
+}
+
+.textright {
+    margin-top: -30px;
+}
