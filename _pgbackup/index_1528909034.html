@@ -692,8 +692,8 @@ particlesJS("particles-js", {
     				if (pos == 100) {
       					clearInterval(id);
     				} else {
-      					pos+=4;
-                        pos1+=4;
+      					pos+=1;
+                        pos1+=1;
       					elem.style.left = pos + 'vw'; 
                         elem2.style.left = pos1 + 'vw';
                         document.body.style.overflowY = "hidden";
@@ -704,15 +704,16 @@ particlesJS("particles-js", {
             function slideRight(){
                 var elem = document.getElementById("pag1");  
                 var elem2 = document.getElementById("pag2");
-  				var pos3 = 100;
+  				var pos = 100px;
   				var id = setInterval(frame, 5);
   				function frame() {
-    				if (pos3 == 0) {
+    				if (pos == 0) {
       					clearInterval(id);
     				} else {
-      					pos3-=4;
-      					elem.style.left = pos3 + 'vw'; 
+      					pos-=3;
+      					elem.style.left = pos + 'vw'; 
                         document.body.style.overflowY = "visible";
+                        document.body.style.overflowX = "hidden";
                         
     				}
                     
