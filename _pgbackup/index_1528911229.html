@@ -682,20 +682,14 @@ particlesJS("particles-js", {
 });
         </script>
         <script>
-            
+            //Add mobile changes
         	function slideLeft(){
-                var width = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
                 var elem = document.getElementById("pag1");  
                 var elem2 = document.getElementById("pag2");
   				var pos = 0;
                 var pos1 = -100;
   				var id = setInterval(frame, 5);
   				function frame() {
-                    if(width <= 700){
-                     	 //mobile version
-                    }else{
     				if (pos == 100) {
       					clearInterval(id);
     				} else {
@@ -704,22 +698,16 @@ particlesJS("particles-js", {
       					elem.style.left = pos + 'vw'; 
                         elem2.style.left = pos1 + 'vw';
                         document.body.style.overflowY = "hidden";
-    				}}
+    				}
                     
   }
             }
             function slideRight(){
-                var width = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
                 var elem = document.getElementById("pag1");  
                 var elem2 = document.getElementById("pag2");
   				var pos3 = 100;
   				var id = setInterval(frame, 5);
   				function frame() {
-                    if(width <= 700){
-                        
-                    }else{
     				if (pos3 == 0) {
       					clearInterval(id);
     				} else {
@@ -727,7 +715,7 @@ particlesJS("particles-js", {
       					elem.style.left = pos3 + 'vw'; 
                         document.body.style.overflowY = "visible";
                         
-    				}}
+    				}
                     
   }
             }
