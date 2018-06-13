@@ -189,35 +189,12 @@
                 </div>
             </section>
         </div>
-        <div id="pag2" class="pg2" style="left: -100vw;
-    position: absolute;">
+        <div is="pag2" class="pg2">
             <section class="contact1">
-                <div class="header row" style="height: 100px;">
-                    <div class="logo col-lg-2 col-md-2 col-sm-2 col-xl-2 col-2" style="height: 100px;">
-                        <img class="logo1" src="https://www.freeiconspng.com/uploads/letter-j-icon-png-24.png">
-                    </div>
-                    <div class="col-lg col-md col-xl col-sm col" style="height: 100px;"></div>
-                    <div class="col-xl-2 col-sm-3 col-md-3 col-lg-3 col-4" style="height: 100px;
-    vertical-align: middle;
-    display: inline-block;
-    text-align: center;">
-                        <button onclick="slideRight()" class="homeb" style="vertical-align: middle;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 16vh;
-    font-size: 2.5vh;
-    height: 40px;
-    min-width: 15vh;
-    max-width: 18vh;">
-                            Home
-</button>
-                    </div>
-                </div>
                 <div class="container"> 
                     <form id="contact" action="" method="post">
                         <h3>Quick Contact</h3>
-                        <h4>Contact Me today, and get reply with in 24 hours!</h4>
+                        <h4>Contact us today, and get reply with in 24 hours!</h4>
                         <fieldset>
                             <input placeholder="Your name" type="text" tabindex="1" required autofocus>
                         </fieldset>
@@ -684,37 +661,18 @@ particlesJS("particles-js", {
         <script>
         	function slideLeft(){
                 var elem = document.getElementById("pag1");  
-                var elem2 = document.getElementById("pag2");
+                var elem2= document.getElementById("pag2");
   				var pos = 0;
-                var pos1 = -100;
   				var id = setInterval(frame, 5);
   				function frame() {
-    				if (pos == 100) {
+    				if (pos == 350) {
       					clearInterval(id);
     				} else {
-      					pos+=1;
-                        pos1+=1;
-      					elem.style.left = pos + 'vw'; 
-                        elem2.style.left = pos1 + 'vw';
-                        document.body.style.overflowY = "hidden";
-    				}
-                    
-  }
-            }
-            function slideRight(){
-                var elem = document.getElementById("pag1");  
-                var elem2 = document.getElementById("pag2");
-  				var pos = 2000;
-  				var id = setInterval(frame, 5);
-  				function frame() {
-    				if (pos == 0) {
-      					clearInterval(id);
-    				} else {
-      					pos-=50;
+      					pos++; 
+      					elem.style.top = pos + 'px'; 
       					elem.style.left = pos + 'px'; 
-                        document.body.style.overflowY = "visible";
-    				}
-                    
+                        elem2.style.visibility = "visible";
+    }
   }
             }
         </script>

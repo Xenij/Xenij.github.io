@@ -431,7 +431,3 @@ fieldset {
     transition: .25s;
     margin-right: auto;
 }
-
-.homeb:hover {
-    transform: scale(1.1);
-}

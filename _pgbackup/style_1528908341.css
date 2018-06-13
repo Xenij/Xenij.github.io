@@ -6,13 +6,11 @@ html body {
 }
 
 .pg1 {
-    z-index: 3;
     visibility: visible;
-    transition: slideLeft 2s;
 }
 
 .pg2 {
-    z-index: 2;
+    visibility: hidden;
 }
 
 .contact1 {
@@ -417,21 +415,4 @@ fieldset {
 
 :-ms-input-placeholder {
     color: #888;
-}
-
-.homeb {
-    color: black;
-    background: transparent;
-    margin-top: 30px;
-    margin-left: auto;
-    width: 110px;
-    height: 40px;
-    border: 2px solid black;
-    border-radius: 40px;
-    transition: .25s;
-    margin-right: auto;
-}
-
-.homeb:hover {
-    transform: scale(1.1);
 }
