@@ -1,0 +1,14 @@
+svg {
+    width: 30px;
+    display: block;
+    cursor: pointer;
+    color: transparent;
+    transform: scale(3.5);
+}
+
+svg path {
+    stroke-dasharray: 1650;
+}
+
+.abilityt {
+}

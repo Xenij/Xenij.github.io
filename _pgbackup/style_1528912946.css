@@ -52,8 +52,6 @@ h1 {
     color: black;
     height: 100vh;
     background-color: white;
-    min-height: 100vh;
-    max-height: 200vh;
 }
 
 .work {
@@ -115,7 +113,10 @@ h1 {
 
 .contact:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    color: white;
+    background: black;
+    border: 2px solid black;
+    border-radius: 50px;
 }
 
 .abouth {
@@ -134,11 +135,10 @@ h1 {
 
 .card {
     top: -15vh;
+    margin: 0 auto;
     height: 100vh;
     border-radius: 30px;
     box-shadow: 0 4px 3px #cecece;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .hr {
@@ -193,6 +193,23 @@ h1 {
 
 .contactb:hover {
     cursor: pointer;
+}
+
+.grid {
+    margin-top: 10vh;
+}
+
+.grid-item {
+    width: 20%;
+    height: 40vh;
+    border-radius: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    position: static;
+    z-index: 1;
+    float: left;
+    transition: .5s;
+    margin-top: 10px;
 }
 
 .endh {
@@ -417,76 +434,4 @@ fieldset {
 
 .homeb:hover {
     transform: scale(1.1);
-}
-
-.card1 {
-    margin-left: auto;
-    margin-right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.card2 {
-    margin-right: auto;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.pg3 {
-    display: none;
-}
-
-.error {
-    margin-top: 50%;
-    text-align: center;
-}
-
-/* Plane Animation and css */
-html {
-    background-color: transparent;
-}
-
-.planePath {
-    stroke: black;
-    stroke-width: .1%;
-    stroke-width: .5%;
-    stroke-dasharray: 1% 2%;
-    stroke-linecap: round;
-    fill: none;
-}
-
-.fil1 {
-    fill: #D9DADA;
-}
-
-.fil2 {
-    fill: #C5C6C6;
-}
-
-.fil4 {
-    fill: #9D9E9E;
-}
-
-.fil3 {
-    fill: #AEAFB0;
-}
-
-.plane {
-    width: 1;
-}
-
-@media only screen and (max-width: 999px) {
-    .card1 {
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 0px;
-    }
-
-    .card2 {
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 30px;
-    }
-
-    .skills {
-        margin-bottom: 100vh;
-    }
 }

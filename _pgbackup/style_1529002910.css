@@ -195,6 +195,23 @@ h1 {
     cursor: pointer;
 }
 
+.grid {
+    margin-top: 10vh;
+}
+
+.grid-item {
+    width: 20%;
+    height: 40vh;
+    border-radius: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    position: static;
+    z-index: 1;
+    float: left;
+    transition: .5s;
+    margin-top: 10px;
+}
+
 .endh {
     margin: 0 auto;
     border-radius: 20px;
@@ -423,13 +440,11 @@ fieldset {
     margin-left: auto;
     margin-right: 0;
     border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
 }
 
 .card2 {
     margin-right: auto;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
 }
 
 .pg3 {
@@ -473,20 +488,4 @@ html {
 
 .plane {
     width: 1;
-}
-
-@media only screen and (max-width: 999px) {
-    .card1 {
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 0px;
-    }
-
-    .card2 {
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 30px;
-    }
-
-    .skills {
-        margin-bottom: 100vh;
-    }
 }
