@@ -12,10 +12,11 @@
         <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
         <!-- Custom styles for this template -->         
         <link href="style.css" rel="stylesheet"> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" rel="stylesheet">
         <link href="assets/css/loader.css" rel="stylesheet" type="text/css"> 
         <link href="assets/css/scrollbar.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <link href="assets/css/ability.css" rel="stylesheet" type="text/css">
     </head>     
     <body> 
@@ -23,6 +24,10 @@
     left: 0;">
             <div class="over lay">
                 <div class="warning">
+                    <span class="l1"></span>
+                    <span class="l2"></span>
+                    <span class="l3"></span>
+                    <span class="l4"></span>
                     <span class="wtext">WARNING<br></span>
                     <span class="wtext2">Heavy satire enter at own risk.</span>
                     <button class="btn-enter">
@@ -59,177 +64,6 @@
         <!-- Bootstrap core JavaScript
     ================================================== -->         
         <!-- Placed at the end of the document so the pages load faster -->         
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script>
-        	/* ---- particles.js config ---- */
-
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 150,
-      "density": {
-        "enable": true,
-        "value_area":1000
-      }
-    },
-    "color": {
-      "value": ["#fff"]
-    },
-    
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#fff"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.6,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 2,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 120,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": false
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
-        </script>
-        <script>
-        	$(document).ready(function() {
-    function checkWidth() {
-        var windowSize = $(window).width();
-
-        if (windowSize <= 700) {
-            $(".pg1").css("visibility", "hidden");
-            $(".pg2").css("visibility", "hidden");
-            $(".pg3").css("display", "block");
-        }
-        else{
-            
-        }
-    }
-
-    // Execute on load
-    checkWidth();
-});
-        
-        </script>
-        <script>	
-        	function slideLeft(){
-                var width = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
-                var elem = document.getElementById("pag1");  
-                var elem2 = document.getElementById("pag2");
-  				var pos = 0;
-                var pos1 = -100;
-  				var id = setInterval(frame, 5);
-  				function frame() {
-                    if(width <= 700){
-                     	 //mobile version
-                    }else{
-    				if (pos == 100) {
-      					clearInterval(id);
-    				} else {
-      					pos+=4;
-                        pos1+=4;
-      					elem.style.left = pos + 'vw'; 
-                        elem2.style.left = pos1 + 'vw';
-                        document.body.style.overflowY = "hidden";
-    				}}
-                    
-  }
-            }
-            function slideRight(){
-                var width = window.innerWidth
-|| document.documentElement.clientWidth
-|| document.body.clientWidth;
-                var elem = document.getElementById("pag1");  
-                var elem2 = document.getElementById("pag2");
-  				var pos3 = 100;
-  				var id = setInterval(frame, 5);
-  				function frame() {
-                    if(width <= 700){
-                        
-                    }else{
-    				if (pos3 == 0) {
-      					clearInterval(id);
-    				} else {
-      					pos3-=4;
-      					elem.style.left = pos3 + 'vw'; 
-                        document.body.style.overflowY = "visible";
-                        
-    				}}
-                    
-  }
-            }
-        </script>
         <script>
             $(".btn-enter").click(function(){
                	 $(".over").removeClass("lay");
@@ -250,6 +84,25 @@ particlesJS("particles-js", {
             });
             
         
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
+        
+        TweenLite.defaultEase = Linear.easeNone;
+
+
+//show the square only once js has run
+//visibility set to hidden in css panel
+		TweenLite.set(".warning", {visibility:"visible"});
+
+
+
+		var tl = new TimelineLite();
+tl.fromTo(".l1", 1, {height:0}, {height:200})
+.fromTo(".l2", 4, {width:0, backgroundColor:"red"}, {width:200, backgroundColor:"blue"})
+  .fromTo(".l3", 1, {height:0}, {height:200})
+  .fromTo(".l4", 1, {width:0}, {width:200})
+
+tl.timeScale(3) //play faster
         </script>
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         
