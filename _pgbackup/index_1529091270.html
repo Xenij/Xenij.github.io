@@ -12,14 +12,17 @@
         <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
         <!-- Custom styles for this template -->         
         <link href="style.css" rel="stylesheet"> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" rel="stylesheet">
+        <link href="assets/css/loader.css" rel="stylesheet" type="text/css"> 
+        <link href="assets/css/scrollbar.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <link href="assets/css/ability.css" rel="stylesheet" type="text/css">
     </head>     
     <body> 
         <div id="pag1" class="pg1" style="position: absolute;
-    left: 0;
-    width: 100vw;">
-            <div id="particles-js" class="over lay">
+    left: 0;">
+            <div class="over lay">
                 <div class="warning">
                     <span class="l1"></span>
                     <span class="l2"></span>
@@ -32,8 +35,7 @@
 </button>
                 </div>
                 <div class="broken">
-                    <text class="ass" style="text-align: center;">You scared off my fucking logo.
-                        <br> Now you're stuck.
+                    <text class="ass" style="text-align: center;">You scared off my fucking logo. Now you're stuck.
                         <br>
                     </text>
                 </div>
@@ -76,7 +78,6 @@
                 setTimeout(function(){
                 $(".logo1").delay(3900).addClass("gone");
                 $(".over").delay(3900).addClass("lay");
-                $("canvas").show();
                 $(".ass").delay(3900).removeClass("ass");
                     }, 4000);
                 
@@ -85,8 +86,7 @@
         
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
-        </script>
-        <script>
+        
         TweenLite.defaultEase = Linear.easeNone;
 
 
@@ -97,121 +97,12 @@
 
 
 		var tl = new TimelineLite();
-tl.fromTo(".l1", 1, {height:0}, {height:110})
-.fromTo(".l2", 4, {width:0}, {width:300})
-  .fromTo(".l3", 1, {height:0}, {height:110})
-  .fromTo(".l4", 1, {width:0}, {width:300})
+tl.fromTo(".l1", 1, {height:0}, {height:200})
+.fromTo(".l2", 4, {width:0, backgroundColor:"red"}, {width:200, backgroundColor:"blue"})
+  .fromTo(".l3", 1, {height:0}, {height:200})
+  .fromTo(".l4", 1, {width:0}, {width:200})
 
 tl.timeScale(3) //play faster
-        </script>
-        <script src="https://cldup.com/S6Ptkwu_qA.js"></script>
-        <script>
-        	// ParticlesJS Config.
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 700
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
         </script>
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         

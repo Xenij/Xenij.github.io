@@ -1,7 +1,7 @@
 html body {
     font-family: 'Jura', sans-serif;
+    overflow-x: hidden !important;
     transition: .5s;
-    overflow: hidden;
 }
 
 .pg1 {
@@ -341,7 +341,7 @@ h1 {
     z-index: 1;
     height: 100vh;
     width: 100vw;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.95);
 }
 
 .broken {
@@ -360,15 +360,14 @@ h1 {
 
 .warning {
     width: 300px;
-    position: relative;
+    position: absolute;
     height: 110px;
     display: block;
     background: linear-gradient(to right, #e85156 , #ce3b40);
+    left: 38%;
     border-radius: 10px;
     top: 30%;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .wtext {
@@ -397,48 +396,33 @@ h1 {
     height: 0px;
 
     /*give each border a background color of black in css so that you don't need to animate it*/
-    background-color: black;
+    background-color: red;
 }
 
 .l1 {
-    left: -2px;
+    left: -3px;
     bottom: 0;
     height: 110px;
     width: 3px;
 }
 
 .l2 {
-    top: -2px;
+    top: -3px;
     left: 0;
     width: 300px;
     height: 3px;
 }
 
 .l3 {
-    right: -2px;
+    right: -3px;
     top: 0;
     height: 110px;
     width: 3px;
 }
 
 .l4 {
-    bottom: -2px;
+    bottom: -3px;
     right: 0;
     width: 300px;
     height: 3px;
-}
-
-.warning:hover {
-    position: relative;
-    z-index: 2;
-    transition: 1s;
-    transform: scale(1.1);
-}
-
-canvas {
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    display: block;
-    vertical-align: bottom;
 }
