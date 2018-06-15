@@ -21,14 +21,7 @@
     <body> 
         <div id="pag1" class="pg1" style="position: absolute;
     left: 0;">
-            <div class="over lay">
-                <div class="warning">
-                    <span class="wtext">WARNING<br></span>
-                    <span class="wtext2">Heavy satire enter at own risk.</span>
-                    <button class="btn-enter">
-                        Proceed.
-</button>
-                </div>
+            <div class="over">
                 <div class="broken">
                     <text class="ass" style="text-align: center;">You scared off my fucking logo. Now you're stuck.
                         <br>
@@ -231,14 +224,6 @@ particlesJS("particles-js", {
             }
         </script>
         <script>
-            $(".btn-enter").click(function(){
-               	 $(".over").removeClass("lay");
-                $(".warning").remove();
-                $(".over").removeClass("lay");
-                $(this).remove();
-                $(".bold").addClass("slideLeft");
-                $(".under").addClass("slideBot");
-            });
         	$(".logo1").hover(function() {
                 $(".logo1").addClass("bounce");
                 setTimeout(function(){

@@ -13,29 +13,17 @@
         <!-- Custom styles for this template -->         
         <link href="style.css" rel="stylesheet"> 
         <link href="assets/css/loader.css" rel="stylesheet" type="text/css"> 
+        <link href="assets/css/bounce.css" rel="stylesheet" type="text/css">
         <link href="assets/css/scrollbar.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
         <link href="assets/css/ability.css" rel="stylesheet" type="text/css">
     </head>     
-    <body> 
+    <body onload="setTimeout(loadFunc, 3000)"> 
         <div id="pag1" class="pg1" style="position: absolute;
     left: 0;">
-            <div class="over lay">
-                <div class="warning">
-                    <span class="wtext">WARNING<br></span>
-                    <span class="wtext2">Heavy satire enter at own risk.</span>
-                    <button class="btn-enter">
-                        Proceed.
-</button>
-                </div>
-                <div class="broken">
-                    <text class="ass" style="text-align: center;">You scared off my fucking logo. Now you're stuck.
-                        <br>
-                    </text>
-                </div>
-            </div>
-            <section class="home hovered"> 
+            <section class="home"> 
                 <div class="header row" style="height: 100px;">
                     <div class="col-lg col-md col-xl col-sm col" style="height: 100px;"></div>
                     <div class="logo col-lg-2 col-md-2 col-sm-2 col-xl-2 col-2" style="height: 100px;">
@@ -52,6 +40,11 @@
                         <h1 class="bold">
                     Front-end Developer</h1> 
                         <h4 class="under">Insert Something Here</h4>
+                        <div id="typed-strings">
+                            <p style="">Insert Something Here</p>
+                        </div>
+                        <span id="typed" style="position: relative;
+    top: 87px;"></span>
                     </div>
                 </div>
             </section>             
@@ -231,26 +224,11 @@ particlesJS("particles-js", {
             }
         </script>
         <script>
-            $(".btn-enter").click(function(){
-               	 $(".over").removeClass("lay");
-                $(".warning").remove();
-                $(".over").removeClass("lay");
-                $(this).remove();
-                $(".bold").addClass("slideLeft");
-                $(".under").addClass("slideBot");
-            });
-        	$(".logo1").hover(function() {
-                $(".logo1").addClass("bounce");
-                setTimeout(function(){
-                $(".logo1").delay(3900).addClass("gone");
-                $(".over").delay(3900).addClass("lay");
-                $(".ass").delay(3900).removeClass("ass");
-                    }, 4000);
-                
-            });
-            
-        
-        </script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+      typeSpeed: 5
+  });
+</script>
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->         

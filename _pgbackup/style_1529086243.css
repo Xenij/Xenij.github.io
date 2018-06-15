@@ -74,12 +74,9 @@ h1 {
     color: white;
     font-size: 4vw;
     font-weight: 700;
+    animation: slideLeft 1s;
     width: 100%;
     position: absolute;
-}
-
-.slideLeft {
-    animation: slideLeft 1s;
 }
 
 @keyframes slideLeft{
@@ -97,9 +94,6 @@ h1 {
     width: 100%;
     position: absolute;
     top: 8vh;
-}
-
-.slideBot {
     animation: slideBot 2s;
 }
 
@@ -356,32 +350,4 @@ h1 {
 
 .ass {
     display: none;
-}
-
-.warning {
-    width: 300px;
-    position: absolute;
-    height: 110px;
-    background: black;
-    left: 38%;
-    border: 3px solid red;
-    border-radius: 10px;
-    top: 30%;
-    text-align: center;
-}
-
-.wtext {
-    color: white;
-    font-weight: 900;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 30px;
-    text-align: center;
-}
-
-.wtext2 {
-    color: white;
-}
-
-.btn-enter {
 }
