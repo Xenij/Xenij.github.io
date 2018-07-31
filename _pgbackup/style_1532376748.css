@@ -551,7 +551,6 @@ textarea {
 
 .formBtn:hover {
     transform: scale(1.01);
-    cursor: pointer;
 }
 
 #hovered {
@@ -569,12 +568,4 @@ textarea {
     position: absolute;
     left: 90%;
     top: 5%;
-}
-
-.cross:hover {
-    cursor: pointer;
-}
-
-#hovered:hover {
-    cursor: pointer;
 }

@@ -1,0 +1,435 @@
+html body {
+    font-family: 'Jura', sans-serif;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.pg1 {
+    z-index: 3;
+    visibility: visible;
+    transition: slideLeft 2s;
+}
+
+h1 {
+    font-family: 'Jura', sans-serif;
+    color: black;
+    font-size: 30px;
+}
+
+.home {
+    color: black;
+    height: 100vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    
+    url('https://bit.ly/2JLmMHD');
+    background-position: center center;
+    background-size: cover;
+}
+
+.about {
+    color: white;
+    height: 50vh;
+    background-color: #272384;
+}
+
+.skills {
+    color: black;
+    height: 100vh;
+    background-color: white;
+    min-height: 100vh;
+    max-height: 200vh;
+}
+
+.work {
+    color: black;
+    height: 100vh;
+    background-color: white;
+}
+
+.end {
+    color: white;
+    height: 25vh;
+    background-color: #272384;
+}
+
+.header {
+    margin-left: 0;
+    width: 100vw;
+    height: 100px;
+}
+
+.text1 {
+    text-align: center;
+    color: white !important;
+    height: 100px;
+    width: 50%;
+    left: 50vw;
+    position: absolute;
+}
+
+.bold {
+    color: white;
+    font-size: 4vw;
+    font-weight: 700;
+    width: 100%;
+    position: absolute;
+}
+
+.slideLeft {
+    animation: slideLeft 1s;
+}
+
+@keyframes slideLeft{
+    0% {
+        left: 100vw;
+    }
+
+    100% {
+        left: 0vw;
+    }
+}
+
+.under {
+    font-size: 2vw;
+    width: 100%;
+    position: absolute;
+    top: 8vh;
+}
+
+.slideBot {
+    animation: slideBot 2s;
+}
+
+@keyframes slideBot{
+    0% {
+        top: 100vw;
+    }
+
+    100% {
+        top: 8vh;
+    }
+}
+
+.logo {
+    vertical-align: middle;
+    height: 100px;
+}
+
+.logo1 {
+    width: 100px;
+    position: absolute;
+    animation: shake linear 2s infinite;
+}
+
+.bounce {
+    left: 0;
+    animation: bounce linear 4s;
+}
+
+@keyframes bounce{
+    0% {
+        transform: translateX(0vw);
+    }
+
+    5% {
+        transform: translateY(10px)translateX(20px);
+    }
+
+    15% {
+        transform: translateY(0px)translateX(40px)scale(.9);
+    }
+
+    25% {
+        transform: translateY(20px)translateX(80px)scale(.7);
+    }
+
+    35% {
+        transform: translateY(0px)translateX(160px)scale(.5);
+    }
+
+    45% {
+        transform: translateY(40px)translateX(320px)scale(.4);
+    }
+
+    55% {
+        transform: translateY(0px)translateX(640px)scale(.2);
+    }
+
+    65% {
+        transform: translateY(80px)translateX(1280px)scale(.1);
+    }
+
+    65.1% {
+        transform: scale(0);
+    }
+
+    75% {
+        transform: scale(0);
+    }
+
+    85% {
+        transform: scale(0);
+    }
+
+    95% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(0);
+        display: none;
+    }
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg) translateY(0);
+    }
+
+    15%,
+    35%,
+    55%,
+    75%,
+    95% {
+        -webkit-transform: translateX(-1px) rotate(-2deg) ;
+    }
+
+    25%,
+    45%,
+    65%,
+    85% {
+        -webkit-transform: translateX(1px) rotate(2deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateY(1px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateY(-1px);
+    }
+}
+
+@-moz-keyframes shake {
+    0%,
+    100% {
+        -moz-transform: translateX(0) rotate(0deg) translateY(0);
+    }
+
+    15%,
+    35%,
+    55%,
+    75%,
+    95% {
+        -moz-transform: translateX(-1px) rotate(-2deg) ;
+    }
+
+    25%,
+    45%,
+    65%,
+    85% {
+        -moz-transform: translateX(1px) rotate(2deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -moz-transform: translateY(1px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -moz-transform: translateY(-1px);
+    }
+}
+
+@-o-keyframes shake {
+    0%,
+    100% {
+        -o-transform: translateX(0) rotate(0deg) translateY(0);
+    }
+
+    15%,
+    35%,
+    55%,
+    75%,
+    95% {
+        -o-transform: translateX(-1px) rotate(-2deg) ;
+    }
+
+    25%,
+    45%,
+    65%,
+    85% {
+        -o-transform: translateX(1px) rotate(2deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -o-transform: translateY(1px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        -o-transform: translateY(-1px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0) rotate(0deg) translateY(0);
+    }
+
+    15%,
+    35%,
+    55%,
+    75%,
+    95% {
+        transform: translateX(-1px) rotate(-2deg) ;
+    }
+
+    25%,
+    45%,
+    65%,
+    85% {
+        transform: translateX(1px) rotate(2deg);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateY(1px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateY(-1px);
+    }
+}
+
+.gone {
+    display: none;
+}
+
+.lay {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.85);
+}
+
+.broken {
+    color: white;
+    height: 25px;
+    text-align: center;
+    width: 250px;
+    top: 50%;
+    left: 40%;
+    position: absolute;
+}
+
+.ass {
+    display: none;
+}
+
+.warning {
+    width: 300px;
+    position: absolute;
+    height: 110px;
+    display: block;
+    background: linear-gradient(to right, #e85156 , #ce3b40);
+    left: 38%;
+    border-radius: 10px;
+    top: 30%;
+    text-align: center;
+}
+
+.wtext {
+    color: white;
+    font-weight: 900;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.wtext2 {
+    color: white;
+}
+
+.btn-enter {
+}
+
+.l1,
+.l2,
+.l3,
+.l4 {
+    position: absolute;
+    background: transparent;
+    width: 0px;
+    height: 0px;
+
+    /*give each border a background color of black in css so that you don't need to animate it*/
+    background-color: black;
+}
+
+.l1 {
+    left: -2px;
+    bottom: 0;
+    height: 110px;
+    width: 3px;
+}
+
+.l2 {
+    top: -2px;
+    left: 0;
+    width: 300px;
+    height: 3px;
+}
+
+.l3 {
+    right: -2px;
+    top: 0;
+    height: 110px;
+    width: 3px;
+}
+
+.l4 {
+    bottom: -2px;
+    right: 0;
+    width: 300px;
+    height: 3px;
+}
+
+.warning:hover {
+    position: absolute;
+    z-index: 2;
+    transition: 1s;
+    transform: scale(1.3);
+}

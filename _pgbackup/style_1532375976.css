@@ -69,9 +69,7 @@ h1 {
 
 .text1 {
     text-align: center;
-    border-width: 2px !important;
-    height: 58px;
-    font-size: 2em !important;
+    color: white !important;
 }
 
 .bold {
@@ -506,7 +504,6 @@ html {
 }
 
 #contactForm {
-    z-index: 1;
     display: none;
     border: 6px solid #272384;
     padding: 2em;
@@ -551,17 +548,11 @@ textarea {
 
 .formBtn:hover {
     transform: scale(1.01);
-    cursor: pointer;
 }
 
-#hovered {
-    display: none;
+.hovered {
     width: 100%;
-    background: black;
     height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .cross {
@@ -569,12 +560,4 @@ textarea {
     position: absolute;
     left: 90%;
     top: 5%;
-}
-
-.cross:hover {
-    cursor: pointer;
-}
-
-#hovered:hover {
-    cursor: pointer;
 }

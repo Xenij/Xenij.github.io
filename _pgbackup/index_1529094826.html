@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <meta name="description" content=""> 
+        <meta name="author" content=""> 
+        <title>Jade Fisher</title>         
+        <!-- Bootstrap core CSS -->         
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+        <!-- Custom styles for this template -->         
+        <link href="style.css" rel="stylesheet">          
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>     
+    <body> 
+        <div id="pag1" class="pg1" style="position: absolute;
+    left: 0;
+    width: 100vw;">
+            <div class="over lay">
+                <div class="warning">
+                    <span class="l1"></span>
+                    <span class="l2"></span>
+                    <span class="l3"></span>
+                    <span class="l4"></span>
+                    <span class="wtext">WARNING<br></span>
+                    <span class="wtext2">Heavy satire enter at own risk.</span>
+                    <button class="btn-enter">
+                        Proceed.
+</button>
+                </div>
+                <div class="broken">
+                    <text class="ass" style="text-align: center;">You scared off my fucking logo. Now you're stuck.
+                        <br>
+                    </text>
+                </div>
+            </div>
+            <section class="home hovered"> 
+                <div class="header row" style="height: 100px;">
+                    <div class="col-lg col-md col-xl col-sm col" style="height: 100px;"></div>
+                    <div class="logo col-lg-2 col-md-2 col-sm-2 col-xl-2 col-2" style="height: 100px;">
+                        <img class="logo1 shake" src="https://www.freeiconspng.com/uploads/letter-j-icon-png-24.png">
+                    </div>
+                    <div class="col col-sm col-md col-lg col-xl" style="height: 100px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;">
+</div>
+                </div>
+                <div class="content"> 
+                    <div class="text1">
+                        <h1 class="bold">
+                    Front-end Developer</h1> 
+                        <h4 class="under">Insert Something Here</h4>
+                    </div>
+                </div>
+            </section>             
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->         
+        <!-- Placed at the end of the document so the pages load faster -->         
+        <script>
+            $(".btn-enter").click(function(){
+               	 $(".over").removeClass("lay");
+                $(".warning").remove();
+                $(".over").removeClass("lay");
+                $(this).remove();
+                $(".bold").addClass("slideLeft");
+                $(".under").addClass("slideBot");
+            });
+        	$(".logo1").hover(function() {
+                $(".logo1").addClass("bounce");
+                setTimeout(function(){
+                $(".logo1").delay(3900).addClass("gone");
+                $(".over").delay(3900).addClass("lay");
+                $(".ass").delay(3900).removeClass("ass");
+                    }, 4000);
+                
+            });
+            
+        
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
+        </script>
+        <script>
+        TweenLite.defaultEase = Linear.easeNone;
+
+
+//show the square only once js has run
+//visibility set to hidden in css panel
+		TweenLite.set(".warning", {visibility:"visible"});
+
+
+
+		var tl = new TimelineLite();
+tl.fromTo(".l1", 1, {height:0}, {height:110})
+.fromTo(".l2", 4, {width:0}, {width:300})
+  .fromTo(".l3", 1, {height:0}, {height:110})
+  .fromTo(".l4", 1, {width:0}, {width:300})
+
+tl.timeScale(3) //play faster
+        </script>
+        <script src="assets/js/popper.js"></script>         
+        <script src="bootstrap/js/bootstrap.min.js"></script>         
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->         
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>         
+    </body>     
+</html>

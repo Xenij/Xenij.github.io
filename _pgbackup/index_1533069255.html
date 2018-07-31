@@ -9,11 +9,12 @@
         <title>Jade Fisher</title>         
         <!-- Bootstrap core CSS -->         
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
         <!-- Custom styles for this template -->         
         <link href="style.css" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<<<<<<< HEAD
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>     
     <body> 
         <div id="pag1" class="pg1" style="position: absolute;
@@ -52,16 +53,12 @@
                     <div class="col-xl-3 col-lg-3" style="height: 100px;
     vertical-align: middle;
     display: inline-block;
-    text-align: center;">
+    text-align: center;
+    padding-left: 5%;">
                         <button id="contact" type="button" class="btn contact" data-toggle="modal" data-target="#myModal">
                             <span>Contact Me</span>
                         </button>
                     </div>
-                </div>
-                <div class="content"> 
-                    <div class="text1">
-                        Full-Stack Developer
-</div>
                 </div>
                 <div id="contactForm">
                     <i id="cross" class="cross fa fa-times" aria-hidden="true"></i>
@@ -75,10 +72,37 @@
                         <input class="formBtn" type="submit" />
                         <input class="formBtn" type="reset" />
                     </form>
+=======
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    </head>     
+    <body> 
+        <div id="pag1" class="pg1" style="position: absolute;
+    left: 0;
+    width: 100vw;">
+            <section class="home hovered"> 
+                <div class="header row" style="height: 100px;">
+                    <div class="col-lg col-md col-xl col-sm col" style="height: 100px;"></div>
+                    <div class="logo col-lg-2 col-md-2 col-sm-2 col-xl-2 col-2" style="height: 100px;">
+                        <img class="logo1 shake" src="https://www.freeiconspng.com/uploads/letter-j-icon-png-24.png">
+                    </div>
+                    <div class="col col-sm col-md col-lg col-xl" style="height: 100px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;">
+</div>
+                </div>
+                <div class="content"> 
+                    <div class="text1">
+                        <h1 class="bold">
+                    Front-end Developer</h1> 
+                        <h4 class="under">Insert Something Here</h4>
+                    </div>
+>>>>>>> 26010a4b84008bb67d7b55b2e5a86038c981ddcf
                 </div>
                 <div id="hovered" style="background-color: rgba(0, 0, 0, 0.8);">
 </div>
             </section>             
+<<<<<<< HEAD
             <section class="about">
                 <div id="particles-js" style="height: 50vh;">
                     <div class="text1">
@@ -187,44 +211,85 @@
 </text>
                 </div>
             </section>
+=======
+>>>>>>> 26010a4b84008bb67d7b55b2e5a86038c981ddcf
         </div>
         <!-- Bootstrap core JavaScript
     ================================================== -->         
         <!-- Placed at the end of the document so the pages load faster -->         
+<<<<<<< HEAD
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+=======
         <script>
-        	/* ---- particles.js config ---- */
+            $(".btn-enter").click(function(){
+               	 $(".over").removeClass("lay");
+                $(".warning").remove();
+                $(".over").removeClass("lay");
+                $(this).remove();
+                $(".bold").addClass("slideLeft");
+                $(".under").addClass("slideBot");
+            });
+        	$(".logo1").hover(function() {
+                $(".logo1").addClass("bounce");
+                setTimeout(function(){
+                $(".logo1").delay(3900).addClass("gone");
+                $(".over").delay(3900).addClass("lay");
+                $("canvas").show();
+                $(".ass").delay(3900).removeClass("ass");
+                    }, 4000);
+                
+            });
+            
+        
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
+        </script>
+        <script>
+        TweenLite.defaultEase = Linear.easeNone;
 
+
+//show the square only once js has run
+//visibility set to hidden in css panel
+		TweenLite.set(".warning", {visibility:"visible"});
+
+
+
+		var tl = new TimelineLite();
+tl.fromTo(".l1", 1, {height:0}, {height:110})
+.fromTo(".l2", 4, {width:0}, {width:300})
+  .fromTo(".l3", 1, {height:0}, {height:110})
+  .fromTo(".l4", 1, {width:0}, {width:300})
+
+tl.timeScale(3) //play faster
+        </script>
+        <script src="https://cldup.com/S6Ptkwu_qA.js"></script>
+>>>>>>> 26010a4b84008bb67d7b55b2e5a86038c981ddcf
+        <script>
+        	// ParticlesJS Config.
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 150,
+      "value": 80,
       "density": {
         "enable": true,
-        "value_area":1000
+        "value_area": 700
       }
     },
     "color": {
-      "value": ["#fff"]
+      "value": "#ffffff"
     },
-    
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#fff"
+        "color": "#000000"
       },
       "polygon": {
         "nb_sides": 5
       },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
     },
     "opacity": {
-      "value": 0.6,
+      "value": 0.5,
       "random": false,
       "anim": {
         "enable": false,
@@ -234,7 +299,7 @@ particlesJS("particles-js", {
       }
     },
     "size": {
-      "value": 2,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -245,11 +310,25 @@ particlesJS("particles-js", {
     },
     "line_linked": {
       "enable": true,
-      "distance": 120,
+      "distance": 150,
       "color": "#ffffff",
       "opacity": 0.4,
       "width": 1
     },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
   },
   "interactivity": {
     "detect_on": "canvas",
@@ -259,7 +338,8 @@ particlesJS("particles-js", {
         "mode": "grab"
       },
       "onclick": {
-        "enable": false
+        "enable": true,
+        "mode": "push"
       },
       "resize": true
     },
@@ -292,6 +372,7 @@ particlesJS("particles-js", {
   "retina_detect": true
 });
         </script>
+<<<<<<< HEAD
         <script>
         $(function() {
   
@@ -318,6 +399,8 @@ particlesJS("particles-js", {
   
 });
         </script>
+=======
+>>>>>>> 26010a4b84008bb67d7b55b2e5a86038c981ddcf
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->         
